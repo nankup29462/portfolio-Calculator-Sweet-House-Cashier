@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- link -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sweet House</title>
+</head>
+<body>
+    <section class="container-fluid">
+    <!-- Header -->
+        <header class="row">
+            <div class="col-12 my-4">
+                <h1><img src="assets/img/icon.png"/>&nbsp; Sweet House Cashier</h1>
+                <hr/>
+            </div>
+        </header>
+        <article class="row">
+    <!-- Order List -->
+            <div class="col-md-6">
+                <div class="row">
+                <!-- Berry Icecream -->
+                    <div class="col-md-4 col-6 my-1">
+                        <div class="card h-100">
+                            <div class="warper-card-img">
+                                <img class="card-img-top" src="assets/img/BerryIcecream1.jpg" alt="BerryIcecream">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Berry Icecream</h5>
+                                <p class="card-text text-right">60 ฿</p>
+                            </div>
+                            <div class="mx-1 my-1">
+                                <button class="btn btn-primary w-100" onclick="calculate(1)">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Chocolate Cake -->
+                    <div class="col-md-4 col-6 my-1">
+                        <div class="card h-100">
+                            <div class="warper-card-img">
+                                <img class="card-img-top" src="assets/img/chocolate cake1.jpg" alt="Chocolate Cake">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Cake</h5>
+                                <p class="card-text text-right">120 ฿</p>
+                            </div>
+                            <div class="mx-1 my-1">
+                                <button class="btn btn-primary w-100" onclick="calculate(2)">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Cup Cake -->
+                    <div class="col-md-4 col-6 my-1">
+                        <div class="card h-100">
+                            <div class="warper-card-img">
+                                <img class="card-img-top" src="assets/img/cupcake1.jpg" alt="Cup Cake">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cup Cake</h5>
+                                <p class="card-text text-right">40 ฿</p>
+                            </div>
+                            <div class="mx-1 my-1">
+                                <button class="btn btn-primary w-100" onclick="calculate(3)">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Donut -->
+                    <div class="col-md-4 col-6 my-1">
+                        <div class="card h-100">
+                            <div class="warper-card-img">
+                                <img class="card-img-top" src="assets/img/donut1.jpg" alt="Donut">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Donut</h5>
+                                <p class="card-text text-right">29 ฿</p>
+                            </div>
+                            <div class="mx-1 my-1">
+                                <button class="btn btn-primary w-100" onclick="calculate(4)">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Macaroon -->
+                    <div class="col-md-4 col-6 my-1">
+                        <div class="card h-100">
+                            <div class="warper-card-img">
+                                <img class="card-img-top" src="assets/img/macaroon1.jpg" alt="Macaroon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Macaroon</h5>
+                                <p class="card-text text-right">40 ฿</p>
+                            </div>
+                            <div class="mx-1 my-1">
+                                <button class="btn btn-primary w-100" onclick="calculate(5)">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Calculator -->
+            <div class="col-md-6 my-1">
+                <h2 class="text-center">Calculator</h2>
+                    <div class="col-12">
+                        <p></p>
+                    </div>
+                <table id="table-order"style="width:100%">
+                    <tr>
+                        <th>จำนวน</th>
+                        <th>สินค้า</th>
+                        <th>ราคา</th>
+                        <th>รวม</th>
+                    </tr>
+                    <tr id="tablerow2">
+                        <td id="rowCount"></td>
+                        <td id="rowName"></td>
+                        <td id="rowPrice"></td>
+                        <td id="rowTotal"></td>
+                    </tr>
+                </table>
+                <div class="row py-2">
+                    <div class="col-7">
+                        <button id="cal" class="btn btn-info btn-cal">Calculate</button>
+                    </div>
+                    <div class="col-4">
+                        <h5 id="allTotal" class="text-right">0</h5>
+                    </div>
+                    <div class="col-1">
+                        <h5 class="text-right">บาท</h5>
+                    </div>
+                </div>
+                <div>
+                    <p id="store" style="display: none;"></p>
+                </div>
+                <div>
+                    <form>รับเงิน</form>
+                    <form>เงินทอน</form>
+                </div>
+            </div>
+        </article>
+        <footer class="row">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </footer>
+    </section>
+    
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+</body>
+</html>

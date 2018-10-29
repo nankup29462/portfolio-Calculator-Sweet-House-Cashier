@@ -1,0 +1,27 @@
+/* Body */
+html,body{
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Card */
+.warper-card-img{
+    position: relative;
+    /* for size */
+    padding-top: 80%;
+    overflow: hidden;
+    margin: 1px;
+}
+.warper-card-img img{
+    position: absolute;
+    top: 0; 
+}
+
+/* Table */
+th,tr,td{
+    border: 2px solid black;
+}
+
+#tablerow2{
+    height: 300px;
+    text-align: center;
+}

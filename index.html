@@ -34,7 +34,7 @@
                                 <p class="card-text text-right">60 ฿</p>
                             </div>
                             <div class="mx-1 my-1">
-                                <button class="btn btn-primary w-100" onclick="calculate(1)">Order</button>
+                                <button class="btn-click btn btn-primary w-100" onclick="calculate(1)">Order</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 <p class="card-text text-right">120 ฿</p>
                             </div>
                             <div class="mx-1 my-1">
-                                <button class="btn btn-primary w-100" onclick="calculate(2)">Order</button>
+                                <button class="btn-click btn btn-primary w-100" onclick="calculate(2)">Order</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                 <p class="card-text text-right">40 ฿</p>
                             </div>
                             <div class="mx-1 my-1">
-                                <button class="btn btn-primary w-100" onclick="calculate(3)">Order</button>
+                                <button class="btn-click btn btn-primary w-100" onclick="calculate(3)">Order</button>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 <p class="card-text text-right">29 ฿</p>
                             </div>
                             <div class="mx-1 my-1">
-                                <button class="btn btn-primary w-100" onclick="calculate(4)">Order</button>
+                                <button class="btn-click btn btn-primary w-100" onclick="calculate(4)">Order</button>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 <p class="card-text text-right">40 ฿</p>
                             </div>
                             <div class="mx-1 my-1">
-                                <button class="btn btn-primary w-100" onclick="calculate(5)">Order</button>
+                                <button class="btn-click btn btn-primary w-100" onclick="calculate(5)">Order</button>
                             </div>
                         </div>
                     </div>
@@ -121,23 +121,32 @@
                     </tr>
                 </table>
                 <div class="row py-2">
-                    <div class="col-7">
-                        <button id="cal" class="btn btn-info btn-cal">Calculate</button>
+                    <div class="col-2">
+                        <h5 class="text-left">ราคารวม</h5>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8">
                         <h5 id="allTotal" class="text-right">0</h5>
                     </div>
-                    <div class="col-1">
+                    <div class="col-2">
                         <h5 class="text-right">บาท</h5>
                     </div>
                 </div>
+                
+            <!-- ใช้เก็บค่าชั่วคราว -->
                 <div>
                     <p id="store" style="display: none;"></p>
                 </div>
-                <div>
-                    <form>รับเงิน</form>
-                    <form>เงินทอน</form>
-                </div>
+
+            <!-- หักลบ -->
+                <!-- <div>
+                    <form>รับเงิน 
+                        <input type="text" name="money">
+                        <input type="submit" value="submit">
+                    </form>
+                    <form>เงินทอน
+                        <label></label>
+                    </form>
+                </div> -->
             </div>
         </article>
         <footer class="row">

@@ -1,8 +1,11 @@
 /* Body */
 html,body{
     font-family: 'Prompt', sans-serif;
+    background: #EDBBE4;
 }
-
+article{
+    background: rgb(255, 255, 255);
+}
 /* Card */
 .warper-card-img{
     position: relative;

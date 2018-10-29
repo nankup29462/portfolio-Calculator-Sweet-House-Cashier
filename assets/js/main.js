@@ -49,7 +49,7 @@ function calculate(product){
     }
 }
 
-$("#cal").click(function(){
+$(".btn-click").click(function(){
     var value = parseInt($("#store").text());
     // console.log(value);
     if(value >= 0 && p == 0){
